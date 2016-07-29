@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>下拉菜单</title>
-	<style type="text/css">
+  <style type="text/css">
 body,ul,li{ margin:0; padding:0; font-size:13px;}
 ul,li{list-style:none;}
 #divselect{width:186px; margin:80px auto; position:relative; z-index:10000;}
@@ -13,14 +13,14 @@ background:url(xjt.png) no-repeat right center;}
 #divselect ul{width:184px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
 #divselect ul li{height:24px; line-height:24px;}
 #divselect ul li a{display:block; height:24px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
-	</style>
+  </style>
    <script type="text/javascript">
 window.onload=function(){
     index = -1;
-	var box=document.getElementById('divselect'),
-	    title=box.getElementsByTagName('cite')[0],
-	    menu=box.getElementsByTagName('ul')[0],
-	    as=box.getElementsByTagName('a'),
+  var box=document.getElementById('divselect'),
+      title=box.getElementsByTagName('cite')[0],
+      menu=box.getElementsByTagName('ul')[0],
+      as=box.getElementsByTagName('a'),
         flag = 0;
         index=-1;
    
@@ -70,8 +70,10 @@ window.onload=function(){
             //列表已经打开，如果enter键就把index所在li文本输出
             menu.style.display = 'none';
             title.innerHTML = as[index].innerHTML;
+            as[index].style.background = '#FFF';
             index = -1;
-            flag = 0;                        
+            flag = 0; 
+            
         }else if(flag==1&&e.keyCode!=13){
             //列表已经打开不按enter的两种情况
             if(e.keyCode==40){
@@ -104,7 +106,7 @@ window.onload=function(){
    </script>
 </head>
 <body>
-	<div id="divselect">
+  <div id="divselect">
       <cite>请选择分类</cite>
       <ul>
          <li id="li"><a href="javascript:;" selectid="1">ASP开发</a></li>
