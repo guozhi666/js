@@ -7,3 +7,4 @@ background:url(xjt.png) no-repeat right center;}
 #divselect ul{width:184px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
 #divselect ul li{height:24px; line-height:24px;}
 #divselect ul li a{display:block; height:24px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+#center{margin-left: auto;margin-right: auto;}
